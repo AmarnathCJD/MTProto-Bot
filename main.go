@@ -24,7 +24,7 @@ func main() {
 		ServerHost:      "149.154.167.50:443",
 		AppID:           appID,
 		DeviceModel:     "Unknown",
-		SystemVersion:   "windows/amd64",
+		SystemVersion:   "linux/amd64",
 		AppHash:         appHash,
 		InitWarnChannel: true,
 	})

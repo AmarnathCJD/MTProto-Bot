@@ -1,1 +1,1 @@
-worker: ./bin/mtproto-bot
+worker: ./bin/main
