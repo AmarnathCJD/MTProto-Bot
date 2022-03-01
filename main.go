@@ -18,8 +18,7 @@ var (
 
 const (
 	// from https://my.telegram.org/apps
-	TgAppID      = 8950585              // integer value from "App api_id" field      // string value from "App api_hash" field
-	TgTestServer = "149.154.167.40:443" // string value from "Test configuration" field
+	TgAppID      = 8950585              // integer value from "App api_id" field
 	TgProdServer = "149.154.167.50:443" // string value from "Production configuration" field
 
 	TgBotUserName = "aiko_robot" // username of the bot
