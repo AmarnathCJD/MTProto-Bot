@@ -18,14 +18,10 @@ var (
 
 func main() {
 	c, err := telegram.NewClient(telegram.ClientConfig{
-		SessionFile:     sessionFile,
-		PublicKeysFile:  publicKeys,
-		ServerHost:      "149.154.167.50:443",
-		AppID:           appID,
-		DeviceModel:     "Unknown",
-		SystemVersion:   "linux/amd64",
-		AppHash:         appHash,
-		InitWarnChannel: true,
+		SessionFile:    sessionFile,
+		PublicKeysFile: publicKeys,
+		AppID:          appID,
+		AppHash:        appHash,
 	})
 	if err != nil {
 		fmt.Println(err)
