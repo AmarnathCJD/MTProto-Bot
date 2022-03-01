@@ -41,5 +41,9 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("Hi there!", c)
+	u, err := c.ContactsResolveUsername("RoseLoverX")
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(u)
 }
