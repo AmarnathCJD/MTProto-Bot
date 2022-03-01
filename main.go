@@ -31,7 +31,7 @@ var TgBotToken = os.Getenv("TOKEN")
 func main() {
 	appStorage := utils.PrepareAppStorageForExamples()
 	sessionFile := filepath.Join(appStorage, "session.json")
-	publicKeys := filepath.Join(appStorage, "tg_public_keys.pem")
+	publicKeys := "tg_public_keys.pem"
 	c, err := telegram.NewClient(telegram.ClientConfig{
 		SessionFile:    sessionFile,
 		PublicKeysFile: publicKeys,
