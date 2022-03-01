@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 
+	utils "github.com/xelaj/mtproto/examples/example_utils"
 	"github.com/xelaj/mtproto/telegram"
 )
 
@@ -17,6 +19,9 @@ var (
 )
 
 func main() {
+	appStorage := utils.PrepareAppStorageForExamples()
+	sessionFile := filepath.Join(appStorage, "session.json")
+	publicKeys := filepath.Join(appStorage, "tg_public_keys.pem")
 	c, err := telegram.NewClient(telegram.ClientConfig{
 		SessionFile:    sessionFile,
 		PublicKeysFile: publicKeys,
