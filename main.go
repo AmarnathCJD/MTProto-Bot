@@ -35,4 +35,5 @@ func main() {
 	if err2 != nil {
 		fmt.Println(err2)
 	}
+	fmt.Println("Hi there!")
 }
