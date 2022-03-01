@@ -1,0 +1,23 @@
+{
+    "name": "Elisha",
+    "description": "MTP test bot in golang",
+    "keywords": ["mtp", "test", "bot"],
+    "repository": "https://github.com/mtproto-bot",
+    "env": {
+        "TOKEN": {
+            "description": "Bot token",
+            "required": true,
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Application ID",
+            "required": true,
+            "value": ""
+        },
+        "APP_HASH": {
+            "description": "Application hash",
+            "required": true,
+            "value": ""
+        }
+    }
+}
