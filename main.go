@@ -22,7 +22,7 @@ const (
 	TgBotUserName = "aiko_robot" // username of the bot
 )
 
-var TgAppHash = os.Getenv("APP_HASH")
+var TgAppHash = "9b0f3eed1e952ed235eeae933b1daef6"
 var TgBotToken = os.Getenv("TOKEN")
 
 func main() {
