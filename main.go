@@ -26,13 +26,16 @@ var TgAppHash = "9b0f3eed1e952ed235eeae933b1daef6"
 var TgBotToken = os.Getenv("TOKEN")
 
 func main() {
-	sessionFile := "session.json"
-	publicKeys := "tg_public_keys.pem"
+        appStorage := utils.PrepareAppStorageForExamples()
+	sessionFile := filepath.Join(appStorage, "session.json")
+	publicKeys := filepath.Join(appStorage, "tg_public_keys.pem")
+
 	c, err := telegram.NewClient(telegram.ClientConfig{
 		SessionFile:    sessionFile,
 		PublicKeysFile: publicKeys,
 		AppID:          appID,
 		AppHash:        appHash,
+                ServerHost: "149.154.167.50:443",
 	})
 	if err != nil {
 		fmt.Println(err)
