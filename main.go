@@ -41,14 +41,19 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-        _, err = c.AuthImportBotAuthorization(
+        _, errx := c.AuthImportBotAuthorization(
 		1, // flags, it's reserved, must be set (don't mind how does it works, we don't know too)
 		int32(appID),
 		appHash,
 		Token,
 	)
-        if err != nil {
-		fmt.Println(err)
+        if errx != nil {
+		fmt.Println(errx)
 	}
-	fmt.Print("done")
+	uname, err := client.ContactsResolveUsername(botUsername)
+	if err != nil {
+		fmt.Println("ResolveUsername error:", err.Error())
+		os.Exit(1)
+	}
+        fmt.Println(uname)
 }
