@@ -4,9 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-"path/filepath"
-utils "github.com/xelaj/mtproto/examples/example_utils"
-	"github.com/xelaj/mtproto/telegram"
+	"github.com/amarnathcjd/gogram/telegram"
 )
 
 var (
@@ -27,7 +25,6 @@ var TgAppHash = "9b0f3eed1e952ed235eeae933b1daef6"
 var TgBotToken = os.Getenv("TOKEN")
 
 func main() {
-
 	c, err := telegram.NewClient(telegram.ClientConfig{
 		SessionFile:    "session.json",
 		PublicKeysFile: "tg_public_keys.pem",
