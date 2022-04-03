@@ -41,5 +41,14 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Print(c)
+        _, err = c.AuthImportBotAuthorization(
+		1, // flags, it's reserved, must be set (don't mind how does it works, we don't know too)
+		appID,
+		appHash,
+		Token,
+	)
+        if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Print("done")
 }
