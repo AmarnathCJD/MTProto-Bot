@@ -43,7 +43,7 @@ func main() {
 	}
         _, err = c.AuthImportBotAuthorization(
 		1, // flags, it's reserved, must be set (don't mind how does it works, we don't know too)
-		appID,
+		int32(appID),
 		appHash,
 		Token,
 	)
