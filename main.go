@@ -50,7 +50,7 @@ func main() {
         if errx != nil {
 		fmt.Println(errx)
 	}
-	uname, err := client.ContactsResolveUsername(botUsername)
+	uname, err := c.ContactsResolveUsername("roseloverx")
 	if err != nil {
 		fmt.Println("ResolveUsername error:", err.Error())
 		os.Exit(1)
