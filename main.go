@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
+"path/filepath"
+utils "github.com/xelaj/mtproto/examples/example_utils"
 	"github.com/xelaj/mtproto/telegram"
 )
 
